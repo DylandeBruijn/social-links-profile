@@ -1,3 +1,76 @@
 @use 'reset';
 @use 'root';
 @use 'base';
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--clr-dark-grey);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+
+    @media only screen and (min-width: 375px) {
+        max-width: 450px;
+    }
+
+    &__image {
+        min-width: 84px;
+        width: 84px;
+        min-height: 84px;
+        height: 84px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        align-self: center;
+        flex: 0 0 auto;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-weight: 700;
+    }
+
+    &__location {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--clr-orange);
+    }
+
+    &__quote {
+        font-size: 0.9rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__link {
+        font-size: 0.9rem;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        font-weight: 700;
+        color: var(--clr-white);
+        border-radius: 10px;
+        background-color: var(--clr-grey);
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
+        white-space: nowrap;
+        min-width: fit-content;
+
+        &:hover {
+            background-color: var(--clr-orange);
+            color: var(--clr-black);
+        }
+    }
+}
