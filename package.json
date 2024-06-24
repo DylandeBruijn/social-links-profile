@@ -1,0 +1,16 @@
+{
+    "name": "blog-preview-card",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "format": "prettier --ignore-path .gitignore --write ."
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "sass": "^1.72.0",
+        "vite": "^5.2.6"
+    }
+}
