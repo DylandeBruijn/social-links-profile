@@ -1,18 +1,14 @@
-html {
-    font-size: 100%;
-}
-
 body {
-    font-size: 1rem;
+    font-size: 14px;
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-off-black);
     color: var(--clr-white);
+    line-height: 1.5;
 }
 
 main {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
